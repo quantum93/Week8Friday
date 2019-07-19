@@ -19,12 +19,9 @@ class Anagram
     if (first_word_array.any? {|vowel| vowel_array.include?(vowel)}) & (second_word_array.any? {|vowel| vowel_array.include?(vowel)}) == false
       return @message = message1 # return keyword in here ignore following lines and end up action of function.
     end
+    
     first_word_array.each() do |char|
-      if second_word_array.include?(char)
-        @message = message2
-      else
-        @message = message3
-      end
+      if second_word_array.include?(char) then @message = message2 else @message = message3 end
     end
     @message
   end
