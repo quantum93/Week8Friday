@@ -12,8 +12,7 @@ class Anagram
     first_word_array = @word1.delete('^A-Za-z').downcase.split(//)
     second_word_array = @word2.delete('^A-Za-z').downcase.split(//)
     vowel_array = ["a", "i", "e", "o", "u"]
-
-    if first_word_array.any? {|vowel| vowel_array.include?(vowel)}
+    if (first_word_array.any? {|vowel| vowel_array.include?(vowel)}) & (second_word_array.any? {|vowel| vowel_array.include?(vowel)})
       first_word_array.each() do |char|
         if second_word_array.include?(char)
           @message = "These words are anagrams."
@@ -21,23 +20,9 @@ class Anagram
           @message = "These words have no letter matches and are antigrams."
         end
       end
-
     else
       @message = "You need to input actual words!"
     end
-
     @message
   end
 end
-
-#{@char.push(char)}
-#
-# first_word_array.each() do |char|
-#   if vowel_array.include(char)
-#     return @message = "You need to input actual words!"
-
-# if first_word_array.include?(vowel_array) == false
-#   binding.pry
-#   @message = "You need to input actual words!"
-# else
-# end
