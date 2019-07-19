@@ -19,13 +19,15 @@ class Anagram
     if (first_word_array.any? {|vowel| vowel_array.include?(vowel)}) & (second_word_array.any? {|vowel| vowel_array.include?(vowel)}) == false
       return @message = message1 # return keyword in here ignore following lines and end up action of function.
     end
-    
-    first_word_array.each() do |char|
-      if second_word_array.include?(char) then @message = message2 else @message = message3 end
-    end
+
+    first_word_array.each { |char| if second_word_array.include?(char) then @message = message2 else @message = message3 end }
     @message
   end
 end
+
+# first_word_array.each() do |char|
+#   if second_word_array.include?(char) then @message = message2 else @message = message3 end
+# end
 
 #   def comparison()
 #     first_word_array = @word1.delete('^A-Za-z').downcase.split(//)
