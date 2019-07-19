@@ -29,10 +29,8 @@ One other thing: the organizers have set up a friendly competition. The coder wi
 | It converts a string to an array of characters in each string |
 | It makes a logic to compare the each characters in one word with the other word |
 | It compares each characters of one string in another | "ruby", "bury" | "These words are anagrams." |
-
-
-
 | Account for the possibility that words might have different cases but should still be anagrams. For instance, "Tea" is still an anagram of "Eat". |
+| | It compares each characters of one string in another | "Tea", "Eat" | "These words are anagrams." |
 
 | Add a rule to check if the inputs are words. Words can only be anagrams or anagrams if they are, in fact, actually words. (For instance, "yurb" isn't an anagram of "ruby" because "yurb" isn't a real word.) A word must contain a vowel (a, i, e, o, u) or y. Otherwise it's not a word. If one of the inputs has no vowels, your method should return something like this: "You need to input actual words!" (You only need to write a rule for vowels.) |
 

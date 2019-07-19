@@ -9,6 +9,14 @@ describe('anagram logic for two words') do
   # end
   it('gives "These words are anagrams." for ruby, bury') do
     words = Anagram.new('ruby', 'bury')
-    expect(words.comparison()).to(eq("These words are anagrams"))
+    expect(words.comparison()).to(eq("These words are anagrams."))
+  end
+  it('gives "These words are anagrams." for Tea, Eat') do
+    words = Anagram.new('Tea', 'Eat')
+    expect(words.comparison()).to(eq("These words are anagrams."))
+  end
+  it('gives "These words are anagrams." for ruby, bury') do
+    words = Anagram.new('yurb', 'ruby')
+    expect(words.comparison()).to(eq("You need to input actual words!"))
   end
 end
