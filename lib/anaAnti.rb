@@ -9,8 +9,8 @@ class Anagram
   end
 
   def comparison()
-    first_word_array = @word1.downcase.split(//)
-    second_word_array = @word2.downcase.split(//)
+    first_word_array = @word1.delete('^A-Za-z').downcase.split(//)
+    second_word_array = @word2.delete('^A-Za-z').downcase.split(//)
     vowel_array = ["a", "i", "e", "o", "u"]
 
     if first_word_array.any? {|vowel| vowel_array.include?(vowel)}
