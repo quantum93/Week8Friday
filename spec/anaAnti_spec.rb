@@ -43,8 +43,8 @@ describe('anagram logic for two words') do
     words = Anagram.new('ruby&', '@bury ')
     expect(words.comparison()).to(eq("These words are anagrams."))
   end
-  it('gives "These words are anagrams." for ruby&, @bury') do
-    words = Anagram.new('ruby&', '@bury ')
-    expect(words.comparison()).to(eq("These words are anagrams."))
-  end
+  # it('gives "These words are anagrams." for ruby&, @bury') do
+  #   words = Anagram.new('ruby&', '@bury ')
+  #   expect(words.comparison()).to(eq("These words are anagrams."))
+  # end
 end
