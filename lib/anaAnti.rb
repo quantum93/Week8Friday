@@ -16,10 +16,8 @@ class Anagram
     message2 = "These words are anagrams."
     message3 = "These words have no letter matches and are antigrams."
 
-    if (first_word_array.any? {|vowel| vowel_array.include?(vowel)}) & (second_word_array.any? {|vowel| vowel_array.include?(vowel)}) == false
-      return @message = message1 # return keyword in here ignore following lines and end up action of function.
-    end
-
+    if (first_word_array.any? {|vowel| vowel_array.include?(vowel)}) & (second_word_array.any? {|vowel| vowel_array.include?(vowel)}) == false then return @message = message1 end
+    # return keyword in here ignore following lines and end up action of function.
     first_word_array.each { |char| second_word_array.include?(char) ? @message = message2 : @message = message3 }
     @message
   end
