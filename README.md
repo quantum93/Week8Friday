@@ -26,7 +26,11 @@ One other thing: the organizers have set up a friendly competition. The coder wi
 | ------------- |:-------------:| ------:|
 | Check if two words are anagrams. If they are, your method should return something like this: "These words are anagrams." |
 | It takes two words and save it as an separated string |
+| It converts a string to an array of characters in each string |
+| It makes a logic to compare the each characters in one word with the other word |
 | It compares each characters of one string in another | "ruby", "bury" | "These words are anagrams." |
+
+
 
 | Account for the possibility that words might have different cases but should still be anagrams. For instance, "Tea" is still an anagram of "Eat". |
 
