@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
-require './lib/coin_logic.rb'
+require './lib/anaAnti.rb'
 
 p "Please enter a number of cents: $0."
 

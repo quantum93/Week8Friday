@@ -1,12 +1,12 @@
 require 'pry'
 
-class Coin
-  def initialize(money)
-    @money = money
-    @change = []
+class Anagram
+  def initialize(word1, word2)
+    @word1 = word1
+    @word2 = word2
   end
 
-  def converter()
+  def comparison()
     until @money == 0
       if @money >= 25
         quarters = @money / 25
@@ -24,9 +24,7 @@ class Coin
         @change.push("#{@money} pennies")
         @money = 0
       end
-
     end
-
-    @change.join(" ")
+    @message.join(" ")
   end
 end
