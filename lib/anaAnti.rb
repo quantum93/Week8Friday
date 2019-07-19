@@ -20,7 +20,7 @@ class Anagram
       return @message = message1 # return keyword in here ignore following lines and end up action of function.
     end
 
-    first_word_array.each { |char| if second_word_array.include?(char) then @message = message2 else @message = message3 end }
+    first_word_array.each { |char| second_word_array.include?(char) ? @message = message2 : @message = message3 }
     @message
   end
 end
