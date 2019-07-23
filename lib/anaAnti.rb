@@ -26,20 +26,15 @@ class Anagram
     if vowel_in_first & vowel_in_second == false
       return @message = message1
     end
-    if (first_word_array & second_word_array).length >= 2
+    if (first_word_array & second_word_array).length >= first_word_array.length
+      binding.pry
       @message = message2
     elsif (first_word_array & second_word_array).length == 0
       @message = message3
     elsif (first_word_array & second_word_array).length == 1
       @message = message4
     end
-    # first_word_array.each do |char|
-    #   if second_word_array.include?(char)
-    #     @message = message2
-    #   else
-    #     @message = message3
-    #   end
-    # end
-    # @message
   end
 end
+
+# && (first_word_array.length == second_word_array.length)

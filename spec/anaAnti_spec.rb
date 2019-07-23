@@ -12,8 +12,8 @@ describe('anagram logic for two words') do
     expect(words.comparison()).to(eq("These words are anagrams."))
   end
   it('gives These words are anagrams for rubxxy, bury') do
-    words = Anagram.new('ruby', 'bury')
-    expect(words.comparison()).to(eq("These words are anagrams."))
+    words = Anagram.new('rubxxy', 'bury')
+    expect(words.comparison()).to(eq("These words are neithor anagrams nor antigrams, but the real words."))
   end
   it('gives These words are anagrams for Tea, Eat') do
     words = Anagram.new('Tea', 'Eat')
@@ -45,6 +45,14 @@ describe('anagram logic for two words') do
   end
   it('gives These words are anagrams for button, puppy') do
     words = Anagram.new("button", "puppy")
+    expect(words.comparison()).to(eq("These words are neithor anagrams nor antigrams, but the real words."))
+  end
+  it('gives These words are anagrams for Floccinaucinihilipilification", "Floccinaucinihilipilificate') do
+    words = Anagram.new("Floccinaucinihilipilification", "Floccinaucinihilipilificate")
+    expect(words.comparison()).to(eq("These words are neithor anagrams nor antigrams, but the real words."))
+  end
+  it('gives These words are anagrams for Floccinaucinihilipilification", "Floccinaucinihilipilificate') do
+    words = Anagram.new("listened", "silenced")
     expect(words.comparison()).to(eq("These words are neithor anagrams nor antigrams, but the real words."))
   end
 end
