@@ -45,6 +45,6 @@ describe('anagram logic for two words') do
   end
   it('gives These words are anagrams for button, puppy') do
     words = Anagram.new("button", "puppy")
-    expect(words.comparison()).to(eq("These words have no letter matches and are antigrams."))
+    expect(words.comparison()).to(eq("These words are neithor anagrams nor antigrams, but the real words."))
   end
 end
