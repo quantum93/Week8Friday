@@ -41,6 +41,7 @@ One other thing: the organizers have set up a friendly competition. The coder wi
 | Account for multiple words being anagrams or "antigrams." Spaces and punctuation shouldn't count (so they should be removed). You'll need to make sure that each word in the inputted phrases is really a word (passing condition #4 above). You may want to use a regular expression to remove additional characters. |
 | It compares each characters of one string in another | "hi?", "b ye " | "These words have no letter matches and are antigrams." |
 | It compares each characters of one string in another | "ruby&", "@bury" | "These words are anagrams." |
+| It compares each characters of one string in another | "button", "puppy" | "These words are neither anagrams nor antigrams, but the real words." |
 
 
 ## Known Bugs
