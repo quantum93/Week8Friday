@@ -51,8 +51,4 @@ describe('anagram logic for two words') do
     words = Anagram.new("Floccinaucinihilipilification", "Floccinaucinihilipilificate")
     expect(words.comparison()).to(eq("These words are neithor anagrams nor antigrams, but the real words."))
   end
-  it('gives These words are anagrams for Floccinaucinihilipilification", "Floccinaucinihilipilificate') do
-    words = Anagram.new("listened", "silenced")
-    expect(words.comparison()).to(eq("These words are neithor anagrams nor antigrams, but the real words."))
-  end
 end
